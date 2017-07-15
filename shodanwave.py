@@ -44,7 +44,7 @@ def main() :
  parser.add_argument('-w','--wordlist', dest="password",  type=file, help='Select your passwords wordlist')
  parser.add_argument('-k','--shodan', dest="address", default='', type=str, help='Shodan API key')
  parser.add_argument('-l','--limit', dest="limit", default='100', type=str, help='Limit the number of registers responsed by Shodan')
- parser.add_argument('-o','--offset', dest="offset", default='1', type=str, help='Shodan skips this number of registers from response')
+ parser.add_argument('-o','--offset', dest="offset", default='0', type=str, help='Shodan skips this number of registers from response')
 
  args = parser.parse_args()
 
